@@ -1,0 +1,50 @@
+{
+    "expo": {
+      "name": "Smart AI Assistant",
+      "slug": "smart-ai-assistant",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icon.png",
+      "userInterfaceStyle": "light",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTablet": true,
+        "infoPlist": {
+          "NSCameraUsageDescription": "This app uses the camera to capture images for processing.",
+          "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select images for processing."
+        }
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/adaptive-icon.png",
+          "backgroundColor": "#FFFFFF"
+        },
+        "permissions": [
+          "CAMERA",
+          "READ_EXTERNAL_STORAGE",
+          "WRITE_EXTERNAL_STORAGE",
+          "INTERNET",
+          "ACCESS_NETWORK_STATE"
+        ],
+        "package": "com.smartai.assistant"
+      },
+      "web": {
+        "favicon": "./assets/favicon.png"
+      },
+      "plugins": [
+        [
+          "expo-image-picker",
+          {
+            "photosPermission": "The app accesses your photos to let you select images for processing."
+          }
+        ]
+      ]
+    }
+  }
